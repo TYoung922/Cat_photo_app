@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <h1>CatPhotoApp</h1>
       <section>
-        <h2>Cat Photos</h2>
+        <h2 class="catimgs">Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
-        <p>
+        <p class="see">
           See more
           <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
           in our gallery.
         </p>
-        <a href="https://freecatphotoapp.com"
-          ><img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-            alt="A cute orange cat lying on its back."
-          />
-        </a>
+        <div class="container">
+          <div class="item cat1">
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+              alt="A cute orange cat lying on its back."
+            />
+          </div>
+          <div class="item cat2">
+            <img
+              src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-141809950.jpg"
+              alt="cat in mug"
+            />
+          </div>
+          <div class="item cat3">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-photos-of-cats-lion-1593184780.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=480:*"
+              alt="cat costume"
+            />
+          </div>
+        </div>
       </section>
       <section>
-        <h2>Cat Lists</h2>
+        <br />
+        <h2 class="lists">Cat Lists</h2>
         <h3>Things cats love:</h3>
         <ul>
           <li>cat nip</li>
-          <li>laser pointers</li>
+          <li class="laser">laser pointers</li>
           <li>lasagna</li>
         </ul>
         <figure>
@@ -59,10 +75,21 @@
           <li>Black</li>
           <li>Grey</li>
         </ul>
-        <figure>
-          <img src="https://bit.ly/fcc-running-cats" alt"running cats">
-          <figcaption>Cats <strong>love</strong> to <em>run</em>.</figcaption>
-        </figure>
+        <div class="endimgs">
+          <figure>
+            <img src="https://bit.ly/fcc-running-cats" alt"running cats"
+            class="runcat">
+            <figcaption>Cats <strong>love</strong> to <em>run</em>.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/cute-photos-of-cats-excited-1593184777.jpg?crop=1xw:1xh;center,top&resize=980:*"
+              alt="excited cat"
+              class="hicat"
+            />
+            <figcaption>Cats love to say <strong>HI</strong>!</figcaption>
+          </figure>
+        </div>
       </section>
       <section>
         <h2>Cat Form</h2>
@@ -114,11 +141,11 @@
             name="catphotourl"
             placeholder="cat photo URL"
             required
-          />
-          <button type="submit">Submit</button>
+          /><span></span><button type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <br />
     <footer>
       <p>
         No Copyright -
